@@ -12,7 +12,8 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest moved to 26.04 (2026-10-21), which has no CPython 3.8 build
+    runs-on: ubuntu-24.04
 
     steps:
     # Check out repository under $GITHUB_WORKSPACE, so the job can access it
